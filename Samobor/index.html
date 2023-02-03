@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samobor</title>
+    <link href="stil.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="skripta.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container-nav flex">
+            <h1>Grad Samobor</h1>
+            <nav>
+                <ul>
+                    <li><a href="#main-opis">Fašnik</a></li>
+                    <li><a href="#m3_1">O Gradu</a></li>
+                    <li><a href="#h2mapa">Istraži</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container grid">
+            <div class="main-txt">
+                <h1>Fašnik u Samoboru</h1>
+                <p id="main-opis">Povijest Samoborskog fašnika može se pratiti još iz 19. stoljeća, kada je prvi put
+                    organiziran kao
+                    način da građani proslave kraj zime i dolazak proljeća. Karneval je izvorno bio skromnija afera, s
+                    ljudima koji su se oblačili u jednostavne kostime i paradirali ulicama. Međutim, s vremenom je
+                    festivalu rasla popularnost i postajala sve složenija, s više sudionika i zanimljivijim kostimima.
+                </p>
+                <a href="https://www.samobor.hr/fasnik" id="fas_btn">> Saznaj Više <</a>
+            </div>
+            <div class="main-slika">
+                <img src="slike/fasnik.jpg"
+                    id="slika1"><!--https://www.samobor.hr/fasnik/maske-iz-hrvatske-i-slovenije-dolaze-u-samobor-n4531-->
+            </div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="container2 grid2">
+            <div class="m2c_naslov">
+                <h1 id="mc2_h1">Skoči na...</h1>
+            </div>
+            <div class="flex m2c" id="m2c_1"><a href="#m5-0"><span
+                        class="material-symbols-outlined">gallery_thumbnail</span></a>
+                <h3 id="galerija_txt">Galerija</h3>
+            </div>
+            <div class="flex m2c" id="m2c_2"><a href="#h2mapa"><span class="material-symbols-outlined">map</span></a>
+                <h3>Karta</h3>
+            </div>
+            <div class="flex m2c" id="m2c_3"><a href="#para_m3"><span class="material-symbols-outlined">info</span></a>
+                <h3>O Samoboru</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div class="container3 grid3">
+            <div id="m3_1">
+                <h1>O Gradu</h1><span class="material-symbols-outlined" id="drugeikone">
+                    pin_drop
+                </span>
+            </div>
+            <div id="m3_2">
+                <p id="para_m3">Smješten je na istočnim obroncima Samoborskog gorja (dio Žumberačke gore), na izlazu
+                    potoka Gradne u savsku nizinu. Od davnina ima bitno prometno značenje, između ostalog i zbog
+                    hrvatsko-slovenske granice koja se nalazi samo 5 kilometara od centra grada, i nije se mijenjala od
+                    sredine 12. stoljeća. Jedno je od najomiljenijih i najstarijih izletničkih odredišta u Hrvatskoj. U
+                    Samoboru živi oko 37.500 stanovnika od kojih je 16.000 u samom Samoboru, a 21.500 živi u okolnim
+                    mjestima koja spadaju pod lokalnu samoupravu Samobor. </p>
+            </div>
+            <div id="m3_3">
+                <h1>Što ima za raditi?</h1><span class="material-symbols-outlined" id="drugeikone">
+                    hiking
+                </span>
+            </div>
+            <div id="m3_4">
+                <p id="para_m3_2">Samobor i njegovo obližnje područje bogati su sa prirodom, biciklističkim i
+                    planinarskim stazama. Park prirode Žumberak nalazi se zapadno od grada na Samoborskom gorju i tamo
+                    možete uživati u prirodi, stazama, vodopadima i vidilicama. Samobor je pun gastrononskih užitaka sa
+                    svojim restoranima, domaćinstvima i poznatim kremšnitama. Za ostanak imate širok izbor hotela,
+                    kampova i soba za odmor prije polaska na razne manifestacije kao fašnik, grand prix, akvarel ili
+                    salamijada.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main4">
+        <div class="container4">
+            <h1 id="h2mapa">Istraži</h1>
+            <div id="pin1" class="pin"><span class="material-symbols-outlined simbol_mapa">
+                    castle
+                </span></div>
+            <div id="pin2" class="pin"><span class="material-symbols-outlined simbol_mapa">
+                    account_balance
+                </span></div>
+            <div id="pin3" class="pin"><span class="material-symbols-outlined simbol_mapa">
+                    local_mall
+                </span></div>
+            <div id="pin4" class="pin"><span class="material-symbols-outlined simbol_mapa">
+                    hotel
+                </span></div>
+
+        </div>
+    </div>
+
+    <div class="main5 flex">
+
+        <div class="container5">
+            <div id="m5-0" class="gal_img"></div>
+            <div id="m5-1" class="gal_img"></div>
+            <div id="m5-2" class="gal_img"></div>
+            <div id="m5-3" class="gal_img"></div>
+            <div id="m5-4" class="gal_img"></div>
+            <div id="m5-5" class="gal_img"></div>
+            <div id="m5-6" class="gal_img"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span id="potpis">Marino Listeš, 2023</span>
+    </div>
+
+</body>
+
+</html>

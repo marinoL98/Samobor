@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono&family=Roboto+Slab:wght@500&family=Ubuntu:ital,wght@1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    margin: 10px 0px;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.navbar {
+    background: rgb(16, 16, 16);
+    color: white;
+    height: 10vh;
+    /*clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);*/
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    /*  za namistit linkove u navu  */
+}
+
+.navbar ul {
+    display: flex;
+    /* stavi ih inline */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.35s ease-in-out;
+    padding: 10px;
+    margin: 0 20px;
+    /* 5 pix livo desno */
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid white;
+    transition-duration: 0.25s;
+}
+
+.container-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    /* da nav ne odskace od vrha  */
+    padding: 0 20px;
+    /* 20 livo i desno  */
+}
+
+.container-nav h1 {
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#main-opis {
+    padding-right: 90px;
+    margin-bottom: 16px;
+}
+
+.main {
+    height: 56vh;
+    /*border: 1px solid black;*/
+    position: relative;
+    padding: 0 100px;
+    margin-top: 75px;
+    margin-bottom: 80px;
+
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-txt {
+    padding-top: 60px;
+}
+
+#slika1 {
+    border-radius: 15px;
+    box-shadow: 8px 6px 15px -10px rgba(102, 88, 88, 0.77);
+    transition: 0.3s;
+}
+
+#slika1:hover {
+    rotate: 1deg;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+#fas_btn {
+
+    transition: 0.2s;
+    color: black;
+}
+
+#fas_btn:hover {
+    transition: 0.2s;
+    color: rgb(227, 213, 134);
+}
+
+.main2 {
+    height: 45vh;
+    background-color: rgb(16, 16, 16);
+    clip-path: polygon(0% 0%, 0 90%, 46% 90%, 50% 100%, 54% 90%, 100% 90%, 100% 0%);
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: 0.2fr 0.55fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+
+}
+
+.material-symbols-outlined {
+    font-size: 100px !important;
+    color: white;
+    transition: 0.2s;
+}
+
+.material-symbols-outlined:hover {
+    color: rgb(227, 213, 134);
+    transition: 0.2s;
+}
+
+h3 {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+
+#galerija_txt {
+    margin-left: 10px;
+}
+
+.m2c_naslov {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#m2c_1 {
+
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+
+
+}
+
+#m2c_2 {
+
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+
+}
+
+#m2c_3 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+    gap: 40px;
+}
+
+#m3_1 {
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+#m3_2 {
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+#m3_3 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#m3_4 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 3;
+
+}
+
+.m3_p {
+    width: 56%;
+}
+
+#para_m3 {
+    width: 70%;
+}
+
+#para_m3_2 {
+    width: 72%;
+}
+
+#drugeikone {
+    color: black;
+    font-size: 48px !important;
+    margin-top: 8px;
+}
+
+.main4 {
+    height: 66vh;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container4 {
+    width: 78%;
+    height: 100%;
+    background-image: url('slike/mapcartacom.png');
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 8px 6px 15px -10px rgba(102, 88, 88, 0.77);
+
+
+
+}
+
+#h2mapa {
+    background-color: white;
+    padding: 20px;
+    margin-top: -0.33px;
+    width: 20%;
+    box-shadow: 15px 15px 38px -14px rgba(0, 0, 0, 0.54);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.pin {
+    position: relative;
+    background-color: white;
+    box-shadow: 15px 15px 38px -14px rgba(0, 0, 0, 0.54);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 54%, 100% 54%, 50% 90%, 0 54%, 0 54%, 0% 35%, 0 0);
+    width: 40px;
+    height: 60px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    transition: 0.2s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+.pin:hover {
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+
+.simbol_mapa {
+    font-size: 32px !important;
+    z-index: 3;
+    color: rgb(16, 16, 16);
+}
+
+.simbol_mapa:hover {
+    color: rgb(16, 16, 16) !important;
+    transform: scale(1) !important;
+
+
+}
+
+#pin1 {
+    background-color: rgb(216, 216, 64);
+    top: 37%;
+    left: 13%;
+}
+
+#pin2 {
+    background-color: aquamarine;
+    top: 4%;
+    left: 34.5%;
+}
+
+#pin3 {
+    background-color: rgb(222, 170, 79);
+    top: -8%;
+    left: 65%;
+}
+
+#pin4 {
+    background-color: rgb(43, 207, 253);
+    top: 8%;
+    left: 41.5%;
+}
+
+.main5 {
+    height: 200vh;
+
+
+}
+
+.container5 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    width: 78%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#m5-0 {
+
+    background-color: #979A55;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    background: url("Slike/samobor1.jpg");
+    grid-row-end: 3;
+    grid-column-end: 4;
+    background-size: cover;
+
+}
+
+#m5-1 {
+
+    background-color: #E9B5D9;
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 3;
+    grid-column-end: 6;
+    background: url("Slike/samobor2.jpg");
+    background-size: cover;
+
+}
+
+#m5-2 {
+
+    background-color: #A55CED;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    background: url("Slike/samobor3.jpg");
+    background-position: -100px;
+    grid-row-end: 5;
+    grid-column-end: 3;
+    background-size: cover;
+
+}
+
+#m5-3 {
+
+    background-color: #89AD97;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    background: url("Slike/samobor4.jpg");
+    grid-row-end: 5;
+    grid-column-end: 6;
+    background-size: cover;
+
+}
+
+#m5-4 {
+
+    background-color: #DCA5AB;
+    grid-row-start: 5;
+    grid-column-start: 1;
+    background: url("Slike/samobor5.jpg");
+    grid-row-end: 7;
+    grid-column-end: 4;
+    background-size: cover;
+
+}
+
+#m5-5 {
+
+    background-color: #75DB55;
+    grid-row-start: 5;
+    grid-column-start: 4;
+    grid-column-start: 1;
+    background: url("Slike/samobor6.jpg");
+    grid-row-end: 7;
+    grid-column-end: 6;
+    background-size: cover;
+
+}
+
+.gal_img:hover {
+    transform: scale(1.005);
+    transition: 0.2s;
+
+}
+
+.gal_img {
+    transition: 0.2s;
+}
+
+.footer {
+    margin-top: 50px;
+    background: rgb(16, 16, 16);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#potpis {
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+}
